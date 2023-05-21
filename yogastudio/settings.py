@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qnln+#4x!&_p3mo4e6!54tdl@+%24i#tx%akphg)ohj%*)z4^+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 EMAIL_HOST = 'smtp.gmail.com'
@@ -92,12 +92,12 @@ WSGI_APPLICATION = 'yogastudio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'nomachine',
-        'PASSWORD': "1234",
-        'USER': "postgres",
-        'HOST': "localhost"
-
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'yogastudio',
+        'PORT':'5432',
+        'PASSWORD': "046Jt3QIka7TsVVS9uUxx6UxU6ybhJ9M",
+        'USER': "yogastudio_user",
+        'HOST': "dpg-chgjh4bhp8u065vpvsa0-a.oregon-postgres.render.com"
     }
 }
 
